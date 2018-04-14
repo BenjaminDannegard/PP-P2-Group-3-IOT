@@ -1,22 +1,22 @@
 
 <h2> Programming II Report </h2>
 
-The different prototypes we built were to question certain assumptions and to get insights from test users on how chromecast should reveal itself in a targeted setting. I used cardboard and other materials to physical prototypes but in order to create unique interactions and sequence of events and feedbacks in sync, I programmed and implemented a connected system that involves, node.js websocket server application, native android mobile application, client web application and an arduino.
+In the physical prototyping project, we were tasked to explore how Google Chromecast can express its availability without being intrusive in an environment. 
 
-Coming up with codes that will actually create these sequence of interactions and feedbacks in a connected system was quite challenging but the limited knowledge of programming I acquired in this course gave me more power to do certain things I would not have done without this knowledge.
+In order to understand the situation, coding was one of the effective tools I used to explore and understand the design problem.
 
-Since there is a limited to what ordinary physical prototype can do. The cardboard prototype I made was static but when I incorporate codes, all the hidden interaction came to live and it became easy to stimulate and get the kind of insights needed from a test user.
+The initial prototype I built for the first test was static because it was built with cardboard. Using this prototype I was able to investigate how much people know about Chromecast.
 
-In order to make the interaction look natural, I decided to program a native app which will afford test users the chance to use the connected phone as they would in natural situation.
+Although static prototypes are important in some user case scenarios but it was limited when I wanted to test scenarios that are dynamic like triggering a sound or light when a user is in certain location in a room.
 
-The automatic trigger of events that notifies users that there is a presences of chromecast when they entered in a setting was stimulated using the vibration sensor. Although the sensor works when it senses a vibration around it, it might not be the best way to stimulate such interaction but it actually created the effect I wanted.
+Coding is very useful in prototyping because of its versatility. It can be used to prototype web applications, mobile applications and any kind of application that will create a real life scenario for user engagement, user interaction and the ability to get meaningful feedback that will help to understand the design problem.
 
-I used a websocket server application runs on local node server, I struggled to connect an independent android mobile application to it.  After, searching online I find out that I needed to connect all the devices in the same network and use the network IP address in the websocket connection address for client devices.
+The interesting part of coding is when it is combined with a hardware device like arduino, there is no limit to what can be prototyped with these tools. A case in sight was when I was able to prototype a TV set that vibrates when a user enters a room. The TV and sensor were far away and the test was conducted with different scenarios and context in mind. Using this prototype successfully, further validates how important coding is in prototyping both tangible and intangible objects that convey messages.
 
-After, I solved this issue I was faced with another issue which is connected to serial port communication. I started off with Arduino Uno since I wanted to use arduino board with more than six Pulse Width Modulation (PWM) ports. After connecting the arduino board to the websocket server, the arduino board does not receive any data from the server and does not also send data back to server.
+Although during the prototyping phase in the project, I did not experience any situation that I wanted to prototype and test for that I was not able to do, rather I felt with coding I had more power.
 
-It was quite frustrating and after trying all the available information I found online, it did not still work but when I moved the same arduino code to arduino Micro, the serial port communication started working perfectly. Up till now I have not understand why I had this issue with arduino uno board. 
+One of the user test scenarios I prototyped during the project was a system of connected devices. The communication was between a server, arduino and a mobile device that triggers flashlight by user event. This kind of complex test situation would have been very difficult to prototype without the help of code and arduino device.
 
-I also find the node.js websocket library limiting when I wanted to store all the device that are already connected to the server port in a Javascript array but the array always returns null.
+Using coding to prototype can open a new world, but when code is not deployed effectively or there is an unidentified bug in the code it can hinder the prototyping process and in some cases produce false result. A case in hand is when I was testing a light pattern but it happens that I had a bug in my code that went unnoticed. During user testing, I was able to discovered that it produced wrong results due to a bug. I was able to fix the bug and rerun the test. It was clear how the result was quite different.
 
-At the end, it was great that I was able to recreate the interaction I want to use to get user insights with help of programming the interaction through codes.
+The different prototypes I built at different stages of the application helped me to understand the user situation and open new area to explore and also let me dig deeper into what has been known. A case in hand is when I tested light intensity. With the help of potentiometer and arduino, I was able to control the light intensity on the test device. The user testing was done with the amount of light in the scene in consideration. The prototype through user testing was able to give us some insight on how the amount of light in a certain scenario correlates with the intensity of an indicator light on a device
